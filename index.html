@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4d4f69c8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header Section ------------------------------------------------------------------------ -->
+    <header class="header">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-md bg-dark fixed-top py-3">
+                <a class="navbar-brand font-weight-bold color-white" href="./index.html">AESTHETIC .</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto ml-5">
+                        <li class="nav-item active px-1">
+                            <a class="nav-link color-white" href="./index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link nav-fo-color" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link nav-fo-color" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chart rounded text-white p-2">
+                    number of items : <span id="itemsInChart">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Features Section  -------------------------------------------------------------------- -->
+    <section class="features text-center my-5 py-3">
+            <div class="slider">
+                <div class="image">
+                    <img src="imgs/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="slider-control m-auto pt-3">
+                <button class="btn text-white py-1 px-4 m-2" id="left">left</button>
+                <button class="btn text-white py-0 py-1 px-4 m-2" id="play">play</button>
+                <button class="btn text-white py-0 py-1 px-4 m-2" id="stop">stop</button>
+                <button class="btn text-white py-0 py-1 px-4 m-2" id="right">right</button>
+            </div>
+    </section><hr><hr>
+
+
+    <!-- Fun Facts Section  -------------------------------------------------------------------- -->
+    <section class="fun-facts text-center">
+        <h2 class="text-dark mx-auto mt-5 pt-5 pb-3">FUN FACTS</h2>
+        <p class="lead w-60 mx-auto my-2 pt-3 mb-5">Dignissimos asperiores vitae velit veniam totam fuga molestias
+            accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+
+        <div class="container">
+            <div class="row py-5">
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="fun-facts-element pb-5">
+                        <div class="icon mx-auto d-flex justify-content-center align-items-center">
+                            <i class="fa fa-building fun-facts-icon"></i>
+                        </div>
+                        <h5 class="py-4">22070</h5>
+                        <p class="lead">CREATIVITY FUEL</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="fun-facts-element pb-5">
+                        <div class="icon mx-auto d-flex justify-content-center align-items-center">
+                            <i class="fa fa-smile-beam fun-facts-icon"></i>
+                        </div>
+                        <h5 class="py-4">97</h5>
+                        <p class="lead">HAPPY CLIENTS</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="fun-facts-element pb-5">
+                        <div class="icon mx-auto d-flex justify-content-center align-items-center">
+                            <i class="fa fa-toolbox fun-facts-icon"></i>
+                        </div>
+                        <h5 class="py-4">402</h5>
+                        <p class="lead">PROJECTS DONE</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="fun-facts-element pb-5">
+                        <div class="icon mx-auto d-flex justify-content-center align-items-center">
+                            <i class="fa fa-bell fun-facts-icon"></i>
+                        </div>
+                        <h5 class="py-4">202123</h5>
+                        <p class="lead">HOURS SPENT</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our-Work Section  -------------------------------------------------------------------- -->
+    <section class="Our-Work my-4 py-5 text-center">
+        <h2 class="text-light mx-auto pt-5 pb-3">OUR LATEST WORKS</h2>
+        <div class="our-work-control w-100 m-auto pt-3">
+            <button onclick="displayItems('all')" class="btn text-white py-1 px-4 m-2 bg-info" id="allItems">All</button>
+            <button onclick="displayItems('car')" class="btn text-white py-1 px-4 m-2" id="cars">Cars</button>
+            <button onclick="displayItems('plane')" class="btn text-white py-0 py-1 px-4 m-2" id="plane">Plane</button>
+            <button onclick="displayItems('city')" class="btn text-white py-0 py-1 px-4 m-2" id="city">City</button>
+            <button onclick="displayItems('nature')" class="btn text-white py-0 py-1 px-4 m-2" id="nature">Nature</button>
+        </div>
+        <div class="container-lg">
+            <div id="itemsContainer" class="row text-left my-5 pt-2">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Section  -------------------------------------------------------------------- -->
+    <section class="products text-center">
+        <h2 class="text-dark mx-auto mt-5 pt-5 pb-3">PRODUCTS</h2>
+        <p class="lead w-60 mx-auto my-2 pt-3">Dignissimos asperiores vitae velit veniam totam fuga molestias
+            accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+
+        <div class="container">
+
+        </div>
+    </section>
+
+
+    <!-- Fooooooter Section  -------------------------------------------------------------------- -->
+    <footer class="my-4">
+        <div class="container">
+            <div class="footer-content text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="">
+                            <p class="">&copy; 2016 Free HTML5. All Rights Reserved.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ul class="list-unstyled d-flex justify-content-center">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="up-arrow text-right">
+                            <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

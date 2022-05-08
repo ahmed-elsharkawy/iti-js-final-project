@@ -1,0 +1,339 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 5;
+}
+.my-color{
+    color: #17B794 !important;
+}
+.my-background-color{
+    background-color: #17B794 !important;
+}
+.color-white{
+    color: #fff !important;
+}
+.w-60{
+    width: 60%;
+}
+
+/* Header Section ---------------------------------------------------- header */
+
+.nav-fo-color{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-nav{
+    font-size: 1.05rem;
+}
+.chart{
+    width: 170px;
+    height: 40px;
+    background-color: #13977a;
+}
+.nav-item a:hover{
+    color: #fff !important;
+}
+
+/* Features Section  ------------------------------------------------- Features  */
+
+.slider{
+    width: 1000px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider .image{
+    width: 100%;
+    height: 600px;
+}
+
+.slider .image img{
+    width: 100%;
+    height: 100%
+}
+
+.slider-control{
+    width: 100%;
+}
+
+ .slider-control button,
+ .our-work-control button{
+    background-color: #17B794;
+} 
+
+
+.about-us h2,
+.Our-Work h2,
+.fun-facts h2,
+.products h2,
+.subscribe h2{
+    width: 30rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+.about-us h2::after,
+.Our-Work h2::after,
+.fun-facts h2::after,
+.products h2::after,
+.subscribe h2::after{
+    content:"";
+    position: absolute;
+    width: 16%;
+    height: 2px;
+    background-color: #13977a;
+    top: 100%;
+    left: 42%;
+}
+.about-us .data> p,
+.Our-Work > p,
+.fun-facts > p,
+.products > p, 
+.subscribe > p{
+    font-size: 1.5rem;
+}
+.feature-element .icon,
+.fun-facts .icon{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+}
+@media (max-width: 992px) {
+    .about-us > p,
+    .Our-Work > p,
+    .fun-facts > p,
+    .products > p, 
+    .subscribe > p{
+        font-size: 1.4rem;
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .about-us > p,
+    .Our-Work > p,
+    .fun-facts > p,
+    .products > p, 
+    .subscribe > p{
+        font-size: 1.3rem;
+        width: 95%;
+    }
+}
+
+
+/* Fun Facts Section  ------------------------------------------------  Fun Facts */
+.fun-facts-icon{
+    color: #ccc;
+    font-size: 2.5rem;
+}
+.fun-facts .fun-facts-element h5{
+    font-size: 3rem;
+    color: #17B794;
+}
+.fun-facts .fun-facts-element p{
+    color: #888;
+}
+
+
+/* Our-Work Section  ------------------------------------------------- Our-Work */
+.Our-Work{
+    background: #303841;    
+}
+.Our-Work > p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.our-work-item{
+    height: 250px;
+    transition: all 0.25s ease;
+}
+.our-work-item .image{
+    height: 170px;
+}
+.our-work-item .button{
+    height: 70px;
+}
+.our-work-item:hover{
+    cursor: pointer !important;
+    box-shadow: 1px 1px 20px 0px #222;
+}
+.our-work-item .data h6{
+    color: #bbb;
+}
+.color1{
+    background-color: rgb(80, 84, 90) !important;
+}
+.color2{
+    background-color: rgb(26, 159, 192) !important;
+}
+.color3{
+    background-color: rgb(231, 204, 223) !important;
+}
+.color4{
+    background-color: rgb(112, 39, 34) !important;
+}
+.color5{
+    background-color: rgb(179, 77, 51) !important;
+}
+.color6{
+    background-color: rgb(126, 157, 204) !important;
+}
+
+
+/* Products Section  -------------------------------------------------  Products */
+.products{
+    height: 300px;
+    background-color: #efefef;
+}
+
+/* Subscribe Section  ------------------------------------------------ Subscribe */
+.subscribe{
+    background-color: #303841;
+}
+.subscribe > p{
+    color: #888 !important;
+}
+
+.subscribe form input{
+    border:2px solid rgb(119, 119, 119, 0.6) !important;
+    font-size: 1.1rem;
+}
+.form-button{
+    background-color: #17B794;
+    font-size: 1.2rem;
+    border:none !important;
+    padding: 12px 0;
+}
+
+/* Foooooter Section -------------------------------------------------  Foooooter */
+footer .footer-content p{
+    font-size: .9rem;
+    color: #888;
+}
+footer .footer-content span a,
+.up-arrow a{
+    color: #17B794;
+}
+footer .footer-content span a:hover{
+    text-decoration: none;
+}
+footer .footer-content ul li,
+.team-contacts li{
+    float: left;
+    margin: 0 12px;
+}
+footer .footer-content ul li i, 
+.team-contacts li i{
+    font-size: 1.3rem;
+    color: #17B794;
+}
+
+.up-arrow i{
+    font-size: 40px;
+}
+
+/* ==========                        About Page                      ==================
+ ====================================================================================== */
+
+ .about-header,
+ .contact-header,
+ .portfolio-header,
+ .services-header{
+     height: 500px;
+ }
+ .about-header .head-content,
+ .contact-header .head-content,
+ .portfolio-header .head-content,
+ .services-header .head-content{
+     height: 300px;
+ }
+
+ /* History Section  ------------------------------------ History */
+ .history .discription p{
+     font-size: 1.2rem;
+     color: #555;
+ }
+ .history .carousel-indicators li{
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     margin: 7px;
+ }
+
+ /* MEET THE TEAM Section  -------------------------- MEET THE TEAM */
+ .meet-team .icon{
+    width: 100px;
+    height: 100px;
+ }
+ .meet-team  h6{
+     color: #ccc;
+ }
+
+
+ /* ==========                        Contact Page                      ==================
+ ====================================================================================== */
+
+.contact-form .contact-info ul li{
+    margin: 35px 0;
+    font-size: 1.05rem;
+}
+.contact-form .contact-info ul li a i,
+.contact-form .contact-info ul li p i{
+    padding-right: 25px;
+    color: #ccc !important;
+    font-size: 20px;
+}
+.contact-form .contact-info ul li p{
+    color: #888;
+}
+.contact-form form input,
+.contact-form form textarea{
+    border: 2px solid #ddd;
+}
+.contact-form form textarea{
+    width: 100%;
+}
+.contact-form button{
+    background-color: #17B794;
+    font-size: 1.2rem;
+    border:none !important;
+    color: #fff;
+}
+@media (max-width: 992px) {
+    .contact-form form{
+        margin-bottom: 0 !important;
+    }
+    .contact-form .contact-info{
+        margin: 50px 0  150px !important;
+        padding: 0 !important;
+    }    
+}
+
+
+ /* ==========                        Portfolio Page                      ==================
+ ====================================================================================== */
+.portfolio{
+    background-color: transparent;
+}
+.portfolio button{
+    background-color: #17B794;
+    font-size: 1rem;
+    padding: 20px 60px !important;
+    color: #fff;
+}
+
+
+/* ==========                        Services Page                      ==================
+ ====================================================================================== */
+.offer .offer-element h5{
+    color: #666;
+}
+.offer .offer-element p{
+    font-size: 1.2rem;
+}
+.offer .offer-element .icon{
+    font-size: 2.3rem;
+}
+
+
+/* ==========                        More Services Page                      ==================
+ ====================================================================================== */
